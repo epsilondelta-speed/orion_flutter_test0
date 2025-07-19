@@ -27,7 +27,7 @@ repositories {
         url = uri("https://maven.pkg.github.com/epsilondelta-speed/orion-flutter")
         credentials {
             username = "prasam25"
-            password = "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"
+            password = "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"
         }
     }
     google()
