@@ -25,6 +25,14 @@ android {
 repositories {
     google()
     mavenCentral()
+maven {
+                    name = "GitHubPackages"
+                    url = uri("https://maven.pkg.github.com/epsilondelta-speed/orion-flutter")
+                    credentials {
+                        username = "prasam25"
+                        password = "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"
+                    }
+                }
     
 }
 
