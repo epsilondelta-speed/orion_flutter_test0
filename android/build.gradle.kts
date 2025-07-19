@@ -26,8 +26,8 @@ repositories {
         name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/epsilondelta-speed/orion-flutter")
         credentials {
-            username = "prasam25"
-            password = "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"
+            username = project.findProperty("gpr.orionuser") as String? ?: System.getenv("ORION_USERNAME")
+            password = project.findProperty("gpr.orionkey") as String? ?: System.getenv("ORION_GITHUB_TOKEN")
         }
     }
     google()
