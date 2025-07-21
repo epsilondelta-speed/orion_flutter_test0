@@ -1,6 +1,6 @@
 name: orion_flutter
 description: Orion Flutter SDK (binary-only)
-version: 1.0.17
+version: 1.0.18
 flutter:
   plugin:
     platforms:
