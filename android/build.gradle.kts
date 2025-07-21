@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "co.epsilondelta.orion_flutter"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 23
