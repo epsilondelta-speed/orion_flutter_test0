@@ -36,5 +36,8 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.10")
-    implementation("co.epsilondelta:orion-flutter:1.0.1")
+    implementation("co.epsilondelta:orion-flutter:1.0.1"){
+        exclude group: 'io.flutter', module: 'flutter_embedding_release'
+    }
+    
 }
