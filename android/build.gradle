@@ -54,7 +54,6 @@ dependencies {
 
     // ✅ Your native library with exclusions to prevent duplicate Flutter embedding
     implementation('co.epsilondelta:orion-flutter:1.0.7') {
-        exclude group: 'io.flutter', module: 'flutter_embedding_release'
         exclude group: 'io.flutter', module: 'flutter_embedding_debug'
     }
 
