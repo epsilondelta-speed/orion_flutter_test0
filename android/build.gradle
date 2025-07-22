@@ -53,9 +53,9 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
     // ✅ Your native library with exclusions to prevent duplicate Flutter embedding
-    implementation('co.epsilondelta:orion-flutter:1.0.7') {
-        exclude group: 'io.flutter', module: 'flutter_embedding_debug'
-    }
+    //implementation('co.epsilondelta:orion-flutter:1.0.7') {
+      //  exclude group: 'io.flutter', module: 'flutter_embedding_debug'
+   // }
 
-     //implementation('co.epsilondelta:orion-flutter:1.0.7')
+     implementation('co.epsilondelta:orion-flutter:1.0.9')
 }
