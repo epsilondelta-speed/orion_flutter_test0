@@ -58,5 +58,5 @@ dependencies {
      //   exclude group: 'io.flutter', module: 'flutter_embedding_debug'
    // }
 
-     implementation('co.epsilondelta:orion-flutter:1.0.5')
+     implementation('co.epsilondelta:orion-flutter:1.0.6')
 }
