@@ -52,6 +52,11 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
-  compileOnly "io.flutter:flutter_embedding_debug:1.0.0-39d6d6e699e51b2874210e14cddf1a22fb9524b2"
-  compileOnly "io.flutter:flutter_embedding_release:1.0.0-39d6d6e699e51b2874210e14cddf1a22fb9524b2"
+   // Debug build: bring in the plugin but strip out its embedded release-engine
+       debugImplementation("co.epsilondelta:orion-flutter:1.0.9") {
+            exclude group: "io.flutter", module: "flutter_embedding_release"
+         }
+
+       // Release build: bring in the plugin normally (so the release-engine is included)
+        releaseImplementation("co.epsilondelta:orion-flutter:1.0.9")
 }
